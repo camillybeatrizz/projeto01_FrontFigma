@@ -28,3 +28,26 @@ function toggleCertificados() {
     certificadosText.classList.toggle('open');
 }
 
+async function handleSubmit() {
+    event.preventDefault();
+    const form = document.getElementById('FormContato');
+    const data = new FormData(form);
+    try {
+        const response = await fetch('https://formspree.io/f/mwpodqoz', {
+            method: 'POST',
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        if (response.ok) {
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+        } else {
+            alert("Erro ao enviar a mensagem. Tente novamente.");
+        }
+    } catch (error) {
+        alert("Erro ao enviar a mensagem. Tente novamente.");
+    }
+    return false;
+}

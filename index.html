@@ -223,10 +223,13 @@
                         <li>GitHub:<a href="https://github.com/camillybeatrizz" target="_blank">github.com/camillybeatrizz</a></li>
                     </ul>
 
-                    <form onclick="event.stopPropagation()">
+                    <form id="FormContato" onclick="event.stopPropagation()" onsubmit="return handleSubmit()">
                         <h3>ENTRE EM CONTATO: </h3>
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome"><br>
+
+                        <label for="nome">Contato</label>
+                        <input type="text" id="contato" name="contato"><br>
 
                         <label for="mensagem">Mensagem</label>
                         <textarea id="mensagem" name="mensagem" row="4" cols="50"></textarea>
