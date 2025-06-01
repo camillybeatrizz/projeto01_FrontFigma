@@ -1,5 +1,8 @@
+// Função para alternar a exibição do texto "Sobre mim"
 function toggleSobre() {
+    // Seleciona o elemento com o id 'sobreText'
     const sobreText = document.getElementById('sobreText');
+    // Adiciona ou remove a classe 'open' para mostrar ou esconder o conteúdo
     sobreText.classList.toggle('open');
 }
 
@@ -28,6 +31,8 @@ function toggleCertificados() {
     certificadosText.classList.toggle('open');
 }
 
+// Função para enviar o formulário de contato via AJAX para o Formspree, 
+// evitando recarregar a página e exibindo alertas de sucesso ou erro.
 async function handleSubmit() {
     event.preventDefault();
     const form = document.getElementById('FormContato');

@@ -386,10 +386,11 @@ form input, form textarea {
     max-width: 400px;
     padding: 10px;
     margin: 5px 0;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid #8892B0;
     background-color: #112240;
     color: #CCD6F6;
+
 }
 form input[type="submit"] {
     background-color: #64FFDA;
@@ -422,25 +423,7 @@ button {
 }
 
 /*
-form .error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-form .success {
-    color: green;
-    font-size: 14px;
-    margin-top: 5px;
-}
-form .loading {
-    color: #64FFDA;
-    font-size: 14px;
-    margin-top: 5px;
-}
-form .loading::after {
-    content: '...';
-    animation: loading 1s infinite;
-}
+
 @keyframes loading {
     0% { content: '...'; }
     25% { content: '..'; }
